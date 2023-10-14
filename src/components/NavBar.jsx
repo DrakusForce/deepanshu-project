@@ -1,14 +1,31 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { UilSlidersV, UilAngleDown } from "@iconscout/react-unicons";
 import "../css/NavBar.css";
 
 function NavBar({ groups, setGroups, orders, setOrders }) {
+  const menu = useRef(null);
+
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (menu.current && !menu.current.contains(event.target)) {
+        document.getElementById("menu").classList.remove("depict");
+      }
+    }
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
+
+
   function open() {
     document.getElementById("menu").classList.toggle("depict");
   }
 
   return (
-    <div className="Visible-Icon">
+    <div className="Visible-Icon" ref={menu}>
       <div>
         <button className="btn" onClick={open}>
           <UilSlidersV />
