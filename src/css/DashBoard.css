@@ -1,0 +1,66 @@
+.screen {
+    padding: 2vmax;
+    padding-top: 7vmax;
+    background-color: lightgray;
+    min-height: 100vh;
+  }
+  
+  .screen-one {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+  }
+  
+
+  .Queue {
+    width: 255px;
+    margin: 0.5vmax 0;
+    flex: 0 0 auto;
+    min-height: 50px;
+  }
+  
+  .topdiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1rem;
+  }
+  
+  .topdiv > div:nth-child(1) {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .topdiv> div:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+  }
+  
+  .topdiv div .topdiv-point {
+    height: 1rem;
+  }
+  
+  .topdiv .user-pointer {
+    border-radius: 100%;
+    width: 1.2rem;
+    height: 1.2rem;
+    font-size: 0.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    position: relative;
+  }
+  
+  .topdiv .user-pointer div {
+    width: 0.6rem;
+    height: 0.6rem;
+    border: solid 1px white;
+    border-radius: 100%;
+    position: absolute;
+    bottom: -10%;
+    right: -10%;
+  }
+  

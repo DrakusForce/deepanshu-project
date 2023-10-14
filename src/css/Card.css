@@ -1,0 +1,81 @@
+.Face {
+  background-color: white;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  box-shadow: darkgray 0px 2px 8px 0px;
+  margin: 1rem 0;
+  font-size: 0.7rem;
+  transition: all 0.5s ease-in;
+}
+
+.Face:hover {
+  box-shadow: darkgrey 0px 2px 8px 0px;
+}
+
+.Face .Box {
+  min-height: 6rem;
+  padding: 0.5rem 1rem;
+  display: grid;
+  align-items: center;
+}
+
+.Box .one {
+  font-size: 0.75rem;
+  color: grey;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Box > .one > div {
+  border-radius: 100%;
+  width: 1.2rem;
+  height: 1.2rem;
+  font-size: 0.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: relative;
+}
+
+.Box > .one > div > svg{
+  color: grey;
+}
+
+.Box > .one > div > div {
+  width: 0.5rem;
+  height: 0.5rem;
+  border: solid 1px white;
+  border-radius: 100%;
+  position: absolute;
+  bottom: -15%;
+  right: -15%;
+}
+
+.Box .two {
+  font-weight: 500;
+  width: 85%;
+  margin: 0.5rem 0;
+  display: flex;
+  align-items: baseline;
+}
+
+.Box .three {
+  border: 1px solid lightgrey;
+  padding: 0.5rem;
+  border-radius: 5px;
+  display: inline-flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.Box .two img,
+.Box .three img {
+  height: 12px;
+  padding-right: 5px;
+}
+
+.Box .parent {
+  display: inline-flex;
+  align-items: center;
+}

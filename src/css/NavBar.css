@@ -1,0 +1,83 @@
+.Visible-Icon {
+  padding: 2vmax;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: white;
+  border-bottom: solid lightgrey 1px;
+  box-shadow: grey 0px 1px 0px, darkgrey 0px 1px 0px inset;
+}
+
+.btn {
+  font-size: 1rem;
+  padding: 5px 10px;
+  border: solid lightgray 1px;
+  border-radius: 5px;
+  box-shadow: darkgrak 0px 2px 8px 0px;
+}
+
+.btn:hover {
+  box-shadow: grey 0px 2px 8px 0px;
+}
+
+.btn svg {
+  color: black;
+}
+
+.btn svg:first-child {
+  height: 12px;
+  transform: rotateZ(90deg);
+}
+
+.btn svg:last-child {
+  height: 1rem;
+  position: relative;
+  top: 2px;
+}
+
+.dropdown-menu {
+  width: 0;
+  background-color: lightgray;
+  border: solid lightgrey 1px;
+  border-radius: 10px;
+  padding: 1vmax;
+  box-shadow: grey 0px 2px 8px 0px;
+  position: absolute;
+  top: 70px;
+  left: 2vmax;
+  visibility: hidden;
+}
+
+.dropdown-menu:hover {
+  box-shadow: darkgrey 0px 2px 8px 0px;
+}
+
+.dropdown-menu.depict {
+  width: 24vmax;;
+  visibility: visible;
+}
+
+.dropdown-options {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+
+.dropdown-options label {
+  color: grey;
+}
+
+.dropdown-options select {
+  width: 40%;
+  font-size: medium;
+  font-weight: 500;
+  padding-left: 2px;
+}
+
+@media screen and (max-width: 520px), (max-height: 520px) {
+  .dropdown-menu {
+    width: 80vmin;
+  }
+}
